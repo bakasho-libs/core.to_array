@@ -1,0 +1,38 @@
+{
+  "name": "core.to_array",
+  "version": "0.0.1",
+  "description": "Convert a value into an array",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakasho-libs/core.to_array.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test-node": "./node_modules/.bin/tape test/toArray-test.js | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "./node_modules/.bin/tape test/toArray-test.js",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test/toArray-test.js",
+    "test-browser-travis": "zuul -- ./test/toArray-test.js"
+  },
+  "author": "Bakasho Team",
+  "license": "MIT",
+  "keywords": [
+    "toArray",
+    "to_array"
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jsbeautifier": "^0.2.7",
+    "grunt-contrib-jshint": "^0.11.2",
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0",
+    "zuul": "^3.0.0"
+  },
+  "dependencies": {
+    "core.is_array_like": "git://github.com/bakasho-libs/core.is_array_like.git",
+    "core.is_object_like": "git://github.com/bakasho-libs/core.is_object_like.git",
+    "core.is_string": "git://github.com/bakasho-libs/core.is_string.git",
+    "core.map": "git://github.com/bakasho-libs/core.map.git",
+    "string.split": "git://github.com/bakasho-libs/string.split.git"
+  }
+}
